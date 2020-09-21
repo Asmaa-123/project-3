@@ -1,0 +1,198 @@
+/* 
+general style */
+.heading h2{
+    font-size: 3rem;
+}
+/* start navbar */
+.navbar-nav .nav-item .nav-link:hover{
+    color:#ffc107 !important;
+}
+/* start header */
+header{
+    height:50rem;
+    background-image:url('../img/header-bg.jpg');
+    background-size: cover;
+}
+header nav{
+    height:10%;
+}
+header .content{
+    height:90%;
+}
+header .content p{
+    font-size: 2rem;
+}
+header .content  h1{
+    font-size: 4rem;
+}
+/* start services */
+.services .our-services .icon i {
+    font-size: 2rem;
+}
+/* start protofilo */
+.protofilo .img{
+    cursor:pointer;
+}
+.protofilo .img .lay-out{
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    opacity: 0;
+    transition:all 1s;
+}
+.protofilo .img:hover .lay-out{
+    opacity: 1;
+}
+.protofilo .modal-header .close{
+    margin:0px;
+    padding:0px;
+}
+.protofilo .modal-title
+{
+    margin:0px auto;
+}
+.protofilo .modal-body ul .list-group-item{
+    border:0px
+
+}
+/* start about */
+.about .tree:after{
+    content:" ";
+    width:.2rem;
+    height:auto;
+    background-color:#e9ecef;
+    position: absolute;
+    top:3rem;
+    bottom:0;
+    left:50%;
+}
+.about .tree .info{
+    width:35%;
+}
+.about .tree .item{
+    overflow:auto ;
+}
+.about .tree .item:last-of-type{
+    overflow: visible;
+    height:3rem;
+}
+.about .tree .item .last-img{
+    height:8rem;
+   border:.5rem solid #dee0e2;
+}
+.about .tree .item .left{
+    float:left;
+}
+.about .tree .item .right{
+    float:right;
+}
+
+.about .tree .item .img{
+    width:15%;
+    top:0;
+    left: 41%;
+    z-index:2;
+}
+.about .tree .item .img img{
+ background-color:#dee0e2 !important
+}
+ /* start team */
+  .brands .brand{
+    background-color: #212529 ;
+    width:15%;
+    transition: all .5s;
+}
+ .brands .brand:hover{
+    background-color:#fed136;
+}
+.team .item:after{
+    content:" ";
+    width:1rem;
+    height:1rem;
+    background-color:#e9ecef;
+    border-radius: 50%;
+    position: absolute;
+    top:-2rem;
+    left:50%;
+
+}
+/* start contant */
+.contact{
+    background-color:#212529;
+    background-image:url('../img/map-image.png');
+    background-size:cover;
+
+}
+/* Extra medium devices (labtop) */
+ @media  (max-width: 990px) and (min-width: 600px) {
+    html{
+        font-size: 10px;
+    }
+.about .tree:after{
+        content:" ";
+        width:.2rem;
+        height:auto;
+        background-color:#e9ecef;
+        position: absolute;
+        top:3rem;
+        bottom:0;
+        left:51.5%;
+    }
+    .about .tree .item .info{
+      width:40%;
+
+    }
+    .about .tree .item .last-img{
+        height:10rem;
+        width:10rem;
+       border:.5rem solid #dee0e2;
+       left:36.5%;
+    }
+    .about .tree .item .last-img p{
+        font-size: 1.5rem;
+    }
+    .team .heading h3{
+        margin-top:5rem;
+    }
+    .team .item{
+        margin-bottom:5rem;
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 8px;
+    }
+    .about .tree .item .info{
+        float:left;
+        margin-left:100px;
+        width:50%;
+        
+    }
+    .about .tree .item .info h3,
+    .about .tree .item .info p{
+        text-align:left;
+    }
+    
+    .about .tree:after{
+        content:" ";
+        width:.2rem;
+        height:auto;
+        background-color:#e9ecef;
+        position: absolute;
+        top:3rem;
+        bottom:0;
+        left:89px;
+    }
+    .about .tree .item .img{
+        width:15%;
+        top:0;
+        left:0;
+        z-index:2;
+    }
+    .team .item{
+        margin-bottom:5rem;
+    }
+    
+}
